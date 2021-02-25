@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  storage:
+    build: storage
+  updater:
+    build: updater
+    depends_on:
+      - storage
